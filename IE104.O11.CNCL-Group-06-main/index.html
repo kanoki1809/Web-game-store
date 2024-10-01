@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cyberoyal</title>
+
+    <!-- Add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    >
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/styles/pls-style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/homepage-responsive.css">
+
+    <!-- Embed font -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <script src="./assets/src/scripts.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    <script>
+      load("#header", "./assets/templates/header.html");
+    </script>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-nav-group">
+          <!-- Nav bar -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <!-- Categories -->
+              <li class="nav-item">
+                <a class="nav-item__header"> Categories </a>
+                <ul class="nav-submenu" id="nav-submenu"></ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Search box -->
+          <div class="hero__form-wrap" id="hero__form-wrap">
+            <form class="search-form">
+              <input
+                id="search-form-input"
+                class="search-form-input"
+                name="search-box"
+                type="text"
+                placeholder="search"
+              >
+            </form>
+            <div class="hero__form-result" id="hero__form-result"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-background-container">
+        <video class="video-background" autoplay muted loop>
+          <source
+            src="https://cdn.cloudflare.steamstatic.com/steam/clusters/frontpage/40c14a0bef16a5f75d7e1930/webm_page_bg_english.webm?t=1697739595"
+            type="video/mp4"
+          >
+        </video>
+      </div>
+    </section>
+
+    <!-- Aside Nav-->
+    <aside class="aside">
+      <nav class="aside-nav">
+        <div class="aside-nav-group">
+          <h4 class="aside-nav__header">BROWSE CATEGORIES</h4>
+          <ul class="aside-nav__list" id="aside-nav__list"></ul>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+        <!-- Feature -->
+        <section class="feature" id="feature">
+          <!-- Heading -->
+          <h2 class="heading">FEATURED & RECOMMENDED</h2>
+
+          <!-- Main content -->
+          <div class="feature-group" id="feature-group">
+            <!-- Control group -->
+            <div class="chevron chevron-left">
+              <i class="fa fa-chevron-left fa-3x"></i>
+            </div>
+            <div class="chevron chevron-right">
+              <i class="fa fa-chevron-right fa-3x"></i>
+            </div>
+          </div>
+          <!-- Slide control group -->
+          <div
+            class="feature__slide-control-group slide-control-group"
+            id="feature__slide-control-group"
+          ></div>
+        </section>
+
+        <!-- Special -->
+        <section class="special">
+          <!-- Heading -->
+          <h2 class="heading">SPECIAL OFFERS</h2>
+
+          <!-- Main content -->
+          <div class="special-group" id="special-group">
+            <!-- Control group -->
+            <div class="chevron chevron-left">
+              <i class="fa fa-chevron-left fa-3x"></i>
+            </div>
+            <div class="chevron chevron-right">
+              <i class="fa fa-chevron-right fa-3x"></i>
+            </div>
+          </div>
+
+          <!-- Slide control group -->
+          <div
+            class="slide-control-group"
+            id="special__slide-control-group"
+          ></div>
+        </section>
+
+        <!-- Categories -->
+        <section class="category" id="category">
+          <!-- Heading -->
+          <h2 class="heading">BROWSE BY CATEGORY</h2>
+
+          <!-- Category group -->
+          <div class="category-group" id="category-group">
+            <!-- Control group -->
+            <div class="chevron chevron-left">
+              <i class="fa fa-chevron-left fa-3x"></i>
+            </div>
+            <div class="chevron chevron-right">
+              <i class="fa fa-chevron-right fa-3x"></i>
+            </div>
+          </div>
+
+          <!-- Slide control group -->
+          <div class="category__slide-control-group slide-control-group"></div>
+        </section>
+
+        <!-- Games -->
+        <div class="total-content">
+          <section class="game-filter-nav">
+            <ul class="game-filter-tabs">
+              <li class="filter-tab active" tabindex="0">News & Trending</li>
+              <li class="filter-tab" tabindex="1">Top Sellers</li>
+              <li class="filter-tab" tabindex="2">Popular Upcoming</li>
+              <li class="filter-tab" tabindex="3">Specials</li>
+            </ul>
+          </section>
+          <section class="filtered-game-list">
+            <div class="filtered-game-content">
+              <div class="filtered-game-container">
+                <span class="filtered-game-see-more">
+                  <span class="see-more-less">See more:</span>
+                  <a class="see-more-anchor nonactive">New Realeases</a>
+                </span>
+              </div>
+              <div class="filtered-game-container"></div>
+              <div class="filtered-game-container"></div>
+              <div class="filtered-game-container"></div>
+              <div class="filtered-game-container"></div>
+              <div class="filtered-game-container"></div>
+              <div class="filtered-game-container"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <div class="filtered-game-container hide"></div>
+              <button class="see-more-button nonactive">View More</button>
+            </div>
+          </section>
+        </div>
+        <script
+          src="https://kit.fontawesome.com/66df57de56.js"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+      <p>
+        © Cyberoyal Corporation. All rights reserved. All trademarks are
+        property of their respective owners in Vietnam and other countries.
+      </p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/66df57de56.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script/main.js" type="module"></script>
+  </body>
+</html>

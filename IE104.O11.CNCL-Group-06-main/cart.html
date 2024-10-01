@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart page</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/cart-style.css">
+    <link rel="stylesheet" href="https://store.cloudflare.steamstatic.com/public/shared/css/motiva_sans.css?v=2C1Oh9QFVTyK&amp;l=english&amp;_cdn=cloudflare" type="text/css">
+    <script src="./assets/src/scripts.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <script>
+      load('#header', './assets/templates/header.html');
+    </script>
+
+    <main>
+      <div class="page_content_header">
+        <div class="breadcrumps_page_heading">
+          <div class="breadcrumps">
+            <a href="/">All Products</a> &gt; Your Shopping Cart
+          </div>
+          <h2 class="page_heading">Your Shopping Cart</h2>
+        </div>
+      </div>
+      <div class="page_content_section">
+        <div class="cart_status">
+          <div class="cart_status_message_area">
+            <div class="cart_status_message">Your item has been added!</div>
+            <div class="cart_status_message_arrow"></div>
+          </div>
+        </div>
+        <div style="clear: left"></div>
+        <div class="checkout_content_box">
+          <div id="cart_item_list" class="cart_item_list">
+            <!--<div class="cart_item">
+              <div class="cart_item_price">
+                <div class="price">321000₫</div>
+                <a class="remove_link" href="#">
+                  Remove
+                </a>
+              </div>
+              <div class="cart_item_img">
+                <a href="#">
+                  <img src="./assets/images/game/wildmender.jpg" alt="Wildmender" width="120" height="50">
+                </a>
+              </div>
+              <div class="cart_item_desc">
+                <div class="cart_item_platform">
+                  <span class="win_platform_img"></span>
+                </div>
+                <a href="#">
+                  Wildmender
+                </a><br>
+              </div>
+            </div>
+
+            <div class="cart_item">
+              <div class="cart_item_price">
+                <div class="price">249000₫</div>
+                <a class="remove_link" href="#">
+                  Remove
+                </a>
+              </div>
+              <div class="cart_item_img">
+                <a href="#">
+                  <img src="./assets/images/game/child-of-light.jpg" alt="Child of Light" width="120" height="50">
+                </a>
+              </div>
+              <div class="cart_item_desc">
+                <div class="cart_item_platform">
+                  <span class="win_platform_img"></span>
+                </div>
+                <a href="#">
+                  Child of Light
+                </a><br>
+              </div>
+            </div>-->
+          </div>
+          <div class="purchase_section">
+            <div class="cart_total">
+              <div class="cart_estimated_total_text">
+                Estimated total
+              </div>
+              <div id="cart_estimated_total" class="price">
+                <!--570000₫-->
+              </div>
+            </div>
+            <div class="cart_purchase_desc">
+              Make sure your items are included in the cart list before purchasing.
+            </div>
+            <div class="cart_purchase_button">
+              <a id="myself_purchase_button" href="#">
+                <span>
+                  Confirm and purchase
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="payment_methods_section">
+            <div class="payment_methods_desc">
+              We accept the following payment methods:
+            </div>
+            <div class="payment_methods_img">
+              <img src="./assets/images/visa-logo.png" alt="Visa">
+              <img src="./assets/images/mastercard-logo.png" alt="Mastercard">
+              <img src="./assets/images/paypal-logo.png" alt="PayPal">
+              <img src="./assets/images/american-express-logo.png" alt="American Express">
+              <img src="./assets/images/momo-logo.png" alt="MoMo">
+              <img src="./assets/images/zalopay-logo.png" alt="ZaloPay">
+              <img src="./assets/images/vnpay-logo.png" alt="VNPAY">
+              <img src="./assets/images/discover-logo.png" alt="Discover">
+            </div>
+          </div>
+          <div class="cart_side_desc">
+            All prices include VAT where applicable
+          </div>
+          <div class="continue_shopping">
+            <a id="continue_shopping_button" href="/">
+              <span>
+                Continue Shopping
+              </span>
+            </a>
+            <a id="remove_all" class="remove_link" href="#">
+              Remove all items
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        © Cyberoyal Corporation. All rights reserved. All trademarks are property of
+        their respective owners in Vietnam and other countries.
+      </p>
+    </footer>
+    <script src="./assets/src/cart.js" type="module"></script>
+  </body>
+</html>
+

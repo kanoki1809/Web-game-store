@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game page</title>
+    <!-- Add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    >
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/styles/reset.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/styles/buy_game.css">
+    <link rel="stylesheet" href="./assets/styles/homepage-responsive.css">
+
+    <!-- Embed font -->
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+
+    <script src="./assets/src/scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <!-- Global header -->
+      <script>
+        load('#header', './assets/templates/header.html');
+      </script>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-nav-group">
+            <!-- Nav bar -->
+            <nav class="nav">
+              <ul class="nav-list">
+                <!-- Categories -->
+                <li class="nav-item">
+                  <a
+                    class="nav-item__header"
+                    href="./categories.html?category=all"
+                  >
+                    Categories
+                  </a>
+                  <ul class="nav-submenu" id="nav-submenu"></ul>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Search box -->
+            <div class="hero__form-wrap" id="hero__form-wrap">
+              <form class="search-form">
+                <input
+                  id="search-form-input"
+                  class="search-form-input"
+                  name="search-box"
+                  type="text"
+                  placeholder="search"
+                >
+              </form>
+              <div class="hero__form-result" id="hero__form-result"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script
+        src="https://kit.fontawesome.com/66df57de56.js"
+        crossorigin="anonymous"
+      ></script>
+    </header>
+
+    <div class="container">
+      <div class="address_game">
+        <p class="breadcrumbs">All games</p>
+        <div class="breadcrumbs">></div>
+        <p class="breadcrumbs">Current game</p>
+      </div>
+      <div class="filtered-game-container"></div>
+    </div>
+
+    <div class="container">
+      <h2 class="heading">MOST LIKE THIS</h2>
+      <hr style="border: 1px solid #67c1f5">
+      <div class="most_like" id="most_like">
+        <!--<div class="like_game">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/740130/header_alt_assets_4.jpg?t=1699584634" >
+            <p>Tales of Arise</p>
+            <p>660.000</p>
+          </div>
+
+          <div class="like_game">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/2250600/header.jpg?t=1697653133" >
+            <p>Disgaea 7: Vows of the Virtueless</p>
+            <p>760.000</p>
+          </div>
+
+          <div class="like_game">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1462040/header.jpg?t=1696383548" >
+            <p>FINAL FANTASY VII</p>
+            <p>1.760.000</p>
+          </div>-->
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © Cyberoyal Corporation. All rights reserved. All trademarks are property of
+        their respective owners in Vietnam and other countries.
+      </p>
+    </footer>
+
+    <script src="./assets/script/buy_game.js" type="module"></script>
+  </body>
+</html>

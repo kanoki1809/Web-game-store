@@ -1,0 +1,63 @@
+/* =========== Motiva Sans =========== */
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-ExtraBold.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-Bold.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-Regular.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-Black.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-Medium.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-Light.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Motiva Sans";
+  src: url("MotivaSans/MotivaSans-Thin.woff2") format("woff2"),
+    url("MotivaSans/MotivaSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Cyberoyal</title>
+
+    <!-- Add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    >
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    >
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/styles/categories.css">
+
+    <!-- Embed font -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <script src="./assets/src/scripts.js"></script>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header class="header" id="header"></header>
+    <!-- Global header -->
+    <script>
+      load("#header", "./assets/templates/header.html");
+    </script>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-nav-group">
+            <!-- Nav bar -->
+            <nav class="nav">
+              <ul class="nav-list">
+                <!-- Categories -->
+                <li class="nav-item">
+                  <a
+                    class="nav-item__header"
+                    href="./categories.html?category=all"
+                  >
+                    Categories
+                  </a>
+                  <ul class="nav-submenu" id="nav-submenu"></ul>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Search box -->
+            <div class="hero__form-wrap" id="hero__form-wrap">
+              <form class="search-form">
+                <input
+                  id="search-form-input"
+                  class="search-form-input"
+                  name="search-box"
+                  type="text"
+                  placeholder="search"
+                >
+              </form>
+              <div class="hero__form-result" id="hero__form-result"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--SIDE BAR-->
+      <section class="featured">
+        <div class="background-featured-container">
+          <div class="featured" id="featured">
+            <!-- Control group -->
+            <div class="chevron chevron-left">
+              <i class="fa fa-chevron-left fa-3x"></i>
+            </div>
+
+            <div class="chevron chevron-right">
+              <i class="fa fa-chevron-right fa-3x"></i>
+            </div>
+          </div>
+          <!-- Slide control group -->
+          <div
+            class="feature__slide-control-group slide-control-group"
+            id="feature__slide-control-group"
+          ></div>
+        </div>
+      </section>
+
+      <!--Game group-->
+      <section class="game-group" id="game-group">
+        <div class="game-group-container">
+          <div class="row row-01">
+            <div class="items-01">
+              <div class="item">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1260320/header.jpg?t=1697003851"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span class="discounted-price">310000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items-01">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/2510770/header.jpg?t=1695704425"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span>Free to play</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items-01">
+              <div class="item">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/261570/header.jpg?t=1667504148"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span class="discounted-price">490000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-02">
+            <div class="items-02">
+              <div class="item">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg?t=1696948801"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span>Free to play</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="items-02">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/633230/header.jpg?t=1697148058"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="discount">
+                    <span>-50%</span>
+                  </div>
+                  <div class="price">
+                    <span class="original-price">298000₫</span>
+                    <span class="discounted-price">149000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-03">
+            <div class="items-03">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg?t=1694060626"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="discount">
+                    <span>-40%</span>
+                  </div>
+                  <div class="price">
+                    <span class="original-price">1290000₫</span>
+                    <span class="discounted-price">903000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-03">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/256290/header.jpg?t=1694554365"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span class="discounted-price">249000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-03">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/349040/header.jpg?t=1683624653"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="discount">
+                    <span>-10%</span>
+                  </div>
+                  <div class="price">
+                    <span class="original-price">298000₫</span>
+                    <span class="discounted-price">268200₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-03">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/1599330/header.jpg?t=1696442079"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span class="discounted-price">321000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-04">
+            <div class="items-04">
+              <div class="item">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1607250/header.jpg?t=1697088019"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span class="discounted-price">698000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-04">
+              <div class="item">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1671200/header.jpg?t=1694671986"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span>Free to play</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-04">
+              <div class="item">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/1049890/header.jpg?t=1694012578"
+                  alt="game image"
+                  class="item-image"
+                >
+                <div class="item-content">
+                  <div class="platform-tags">
+                    <i
+                      class="fa-brands fa-windows fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                    <i
+                      class="fa-brands fa-apple fa-lg"
+                      style="color: #7f97a5"
+                    ></i>
+                  </div>
+                  <div class="price">
+                    <span class="discounted-price">220000₫</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn">Show more</div>
+        </div>
+
+        <!---->
+        <section class="more-game-filtered" id="more-game"></section>
+        <!--QC-->
+        <!--Recommended-->
+        <section class="recommended" id="recommended"></section>
+        <h2 class="recommended-heading">RECOMMENDED FOR YOU</h2>
+        <div class="main-container">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="rcm_item">
+              <div class="item-img">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/728880/header.jpg?t=1670442579"
+                  alt="game image"
+                  draggable="false"
+                >
+              </div>
+              <div class="rcm_item-content">
+                <!--<div class="rcm_platform-tags">
+                <i class="fa-brands fa-windows fa-lg" style="color: #7f97a5"></i>
+                <i class="fa-brands fa-apple fa-lg" style="color: #7f97a5"></i>
+              </div>-->
+                <div class="rcm_price">
+                  <span>300000₫</span>
+                </div>
+              </div>
+            </li>
+            <li class="rcm_item">
+              <div class="item-img">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/1049590/header.jpg?t=1695706973"
+                  alt="game image"
+                  draggable="false"
+                >
+              </div>
+              <div class="rcm_item-content">
+                <!--<div class="platform-tags">
+                <i class="fa-brands fa-windows fa-lg" style="color: #7f97a5"></i>
+                <i class="fa-brands fa-apple fa-lg" style="color: #7f97a5"></i>
+              </div>-->
+                <div class="rcm_price">
+                  <span>Free to play</span>
+                </div>
+              </div>
+            </li>
+            <li class="rcm_item">
+              <div class="item-img">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/1203220/header.jpg?t=1697969581"
+                  alt="game image"
+                  draggable="false"
+                >
+              </div>
+              <div class="rcm_item-content">
+                <!--<div class="platform-tags">
+                <i class="fa-brands fa-windows fa-lg" style="color: #7f97a5"></i>
+                <i class="fa-brands fa-apple fa-lg" style="color: #7f97a5"></i>
+              </div>-->
+                <div class="rcm_price">
+                  <span>330000₫</span>
+                </div>
+              </div>
+            </li>
+            <li class="rcm_item">
+              <div class="item-img">
+                <img
+                  src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/header.jpg?t=1666917466"
+                  alt="game image"
+                  draggable="false"
+                >
+              </div>
+              <div class="rcm_item-content">
+                <!--<div class="platform-tags">
+                <i class="fa-brands fa-windows fa-lg" style="color: #7f97a5"></i>
+                <i class="fa-brands fa-apple fa-lg" style="color: #7f97a5"></i>
+              </div>-->
+                <div class="rcm_price">
+                  <span>165000₫</span>
+                </div>
+              </div>
+            </li>
+            <li class="rcm_item">
+              <div class="item-img">
+                <img
+                  src="https://cdn.akamai.steamstatic.com/steam/apps/1237970/capsule_616x353.jpg?t=1668565264"
+                  alt="game image"
+                  draggable="false"
+                >
+              </div>
+              <div class="rcm_item-content">
+                <!--<div class="platform-tags">
+                <i class="fa-brands fa-windows fa-lg" style="color: #7f97a5"></i>
+                <i class="fa-brands fa-apple fa-lg" style="color: #7f97a5"></i>
+              </div>-->
+                <div class="rcm_price">
+                  <span>700000₫</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <p>
+        © Cyberoyal Corporation. All rights reserved. All trademarks are
+        property of their respective owners in Vietnam and other countries.
+      </p>
+    </footer>
+
+    <!--game group-->
+    <!--recommended-->
+    <script src="./assets/script/carousel.js"></script>
+    <!--game group-->
+    <script
+      src="https://kit.fontawesome.com/66df57de56.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/script/categories.js" type="module"></script>
+  </body>
+</html>
